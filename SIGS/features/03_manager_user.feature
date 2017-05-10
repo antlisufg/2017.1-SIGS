@@ -22,7 +22,7 @@ Feature: Manager User
     Then the 'Minha Conta' page should load with notice message 'Dados não foram atualizados'
 
   Scenario: Delete a only account of a administrative asssistant
-    Given I am logged in as asssistant administrative
+    Given I am logged in as assistant administrative
     When click on link 'Minha Conta'
     When I press 'Excluir Conta' button
     Then the initial page should load with notice message 'Não é possível excluir o único Assistente Administrativo'

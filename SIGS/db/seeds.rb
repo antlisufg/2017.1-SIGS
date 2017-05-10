@@ -48,7 +48,7 @@ room_2 = Room.create(code: '987653', name: 'SS', capacity: 40, active: false, ti
 discipline = Discipline.create(code: '876', name: 'Cálculo 3', department_id: 1)
 discipline_2 = Discipline.create(code: '777', name: 'Cálculo 2', department_id: 1)
 
-#SchoolRooms
+# SchoolRooms
 school_room = SchoolRoom.create(name:"A",active:true,discipline: discipline)
 school_room2 = SchoolRoom.create(name:"B",active:true,discipline: discipline)
 
@@ -73,7 +73,6 @@ schedules = Schedule.create([
   ])
 
 # Script for populating days_schedules join table
-
 days_all = Day.all
 schedules_all = Schedule.all
 days_n = days_all.length
