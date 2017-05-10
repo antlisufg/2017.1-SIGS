@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170505033428) do
+ActiveRecord::Schema.define(version: 20170510013349) do
 
   create_table "administrative_assistants", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "user_id"
@@ -51,6 +51,19 @@ ActiveRecord::Schema.define(version: 20170505033428) do
     t.integer "school_room_id", null: false
     t.index ["course_id", "school_room_id"], name: "index_courses_school_rooms_on_course_id_and_school_room_id", using: :btree
     t.index ["school_room_id", "course_id"], name: "index_courses_school_rooms_on_school_room_id_and_course_id", using: :btree
+  end
+
+  create_table "days", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "day_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "days_schedules", id: false, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer "day_id",      null: false
+    t.integer "schedule_id", null: false
+    t.index ["day_id", "schedule_id"], name: "index_days_schedules_on_day_id_and_schedule_id", using: :btree
+    t.index ["schedule_id", "day_id"], name: "index_days_schedules_on_schedule_id_and_day_id", using: :btree
   end
 
   create_table "department_assistants", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -94,6 +107,13 @@ ActiveRecord::Schema.define(version: 20170505033428) do
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
     t.index ["building_id"], name: "index_rooms_on_building_id", using: :btree
+  end
+
+  create_table "schedules", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.time     "start_time"
+    t.time     "end_time"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "school_rooms", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|

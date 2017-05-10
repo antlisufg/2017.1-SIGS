@@ -49,6 +49,38 @@ discipline = Discipline.create(code: '876', name: 'Cálculo 3', department_id: 1
 discipline_2 = Discipline.create(code: '777', name: 'Cálculo 2', department_id: 1)
 
 #SchoolRooms
-
 school_room = SchoolRoom.create(name:"A",active:true,discipline: discipline)
 school_room2 = SchoolRoom.create(name:"B",active:true,discipline: discipline)
+
+# Days
+days = Day.create([
+  { day_name: 'Segunda-Feira' },
+  { day_name: 'Terça-Feira' },
+  { day_name: 'Quarta-Feira' },
+  { day_name: 'Quinta-Feira' },
+  { day_name: 'Sexta-Feira' },
+  { day_name: 'Sábado' }
+  ])
+
+# Schedules
+schedules = Schedule.create([
+  {start_time: '08:00', end_time: '10:00'},
+  {start_time: '10:00', end_time: '12:00'},
+  {start_time: '12:00', end_time: '14:00'},
+  {start_time: '14:00', end_time: '16:00'},
+  {start_time: '18:00', end_time: '20:00'},
+  {start_time: '20:00', end_time: '22:00'}
+  ])
+
+# Script for populating days_schedules join table
+
+days_all = Day.all
+schedules_all = Schedule.all
+days_n = days_all.length
+schedules_n = schedules_all.length
+
+days_n.times do |i|
+  schedules_n.times do |j|
+    days_all[i].schedules << schedules_all[j]
+  end
+end
