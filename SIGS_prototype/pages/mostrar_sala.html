@@ -33,18 +33,18 @@
           <li><a href="minha_conta.html">Minha Conta</a></li>
           <li><a href="../index.html">Logout</a></li>
           <li class="dropdown">
-            <a data-toggle="collapse" href="#demo">Turmas
-              <ul class="collapse" id="demo">
-                <li><a href="turma.html">Cadastrar Turma</a></li>
+            <a data-toggle="collapse" href="#turma">Turmas
+              <ul class="collapse" id="turma">
+                <li><a href="cadastrar_turma.html">Cadastrar Turma</a></li>
               <li><a href="visualizar_turmas.html">Visualizar Turmas</a></li>
             </ul>
           </li>
-          <li><a href="salas.html">Salas</a></li>
+          <li><a href="visualizar_salas.html">Salas</a></li>
           <li class="dropdown">
-            <a data-toggle="collapse" href="#demo">Usuários
-              <ul class="collapse" id="demo">
-                <li><a href="cadastros_pendentes.html">Cadastros Pendentes</a></li>
-                <li><a href="usuarios_registrados.html">Usuários Cadastrados</a></li>
+            <a data-toggle="collapse" href="#usuarios">Usuários
+              <ul class="collapse" id="usuarios">
+                <li><a href="mostrar_cadastros_pendentes_usuario.html">Cadastros Pendentes</a></li>
+                <li><a href="mostrar_usuarios_registrados.html">Usuários Cadastrados</a></li>
               </ul>
             </li>
           <li><a href="#">Alocações</a></li>
@@ -57,102 +57,108 @@
         </figure>
       </header>
       <main class="mainConteiner">
-        <h1>Sala: Superior 10</h1>
-        <h2>Código: S10</h2>
-        <h2>Capacidade: 50</h2>
-        <h2>Ativo: Sim</h2>
-        <h2>Prédio: Pavilhão João Calmon</h2>
-        <br><br>
+            <h1>Sala: Superior 10</h1>
+            <h2>Código: S10</h2>
+            <h2>Capacidade: 50</h2>
+            <h2>Ativo: Sim</h2>
+            <h2>Prédio: Pavilhão João Calmon</h2>
+            <br><br>
 
-        <h2 style="text-align:center"> Grade Horária da Sala </h2>
+            <h2 style="text-align:center"> Grade Horária da Sala </h2>
 
-      <table class="table" style="text-align:center">
-          <tr>
-          <td>Horário de aula</td>
-          <td>Segunda-Feira</td>
-          <td>Terça-Feira</td>
-          <td>Quarta-Feira</td>
-          <td>Quinta-Feira</td>
-          <td>Sexta-Feira</td>
-          <td>Sábado</td>
-        </tr>
-        <tr>
-            <td>06:00<br> - <br>08:00</td>
-            <td> Ressaca </td>
-            <td> B </td>
-            <td> Meio de Semana </td>
-            <td> B </td>
-            <td> Madruga </td>
-            <td> Desenho Industrial Assistido por Computador </td>
-        <tr>
-        <tr>
-            <td>08:00<br>-<br>10:00</td>
-            <td> Desenho de Software </td>
-            <td> B </td>
-            <td> A </td>
-            <td> B </td>
-            <td> Desenho de Software </td>
-            <td> Desenho Industrial Assistido por Computador </td>
-        <tr>
-        <tr>
-            <td>10:00<br>-<br>12:00</td>
-            <td> Desenho de Software </td>
-            <td> B </td>
-            <td> A </td>
-            <td> B </td>
-            <td> Desenho de Software </td>
-            <td> Desenho Industrial Assistido por Computador </td>
-        <tr>
-        <tr>
-            <td>12:00<br>-<br>14:00</td>
-            <td> Desenho Industrial Assistido por Computador </td>
-            <td> Algoritmos de Programação de Computadores </td>
-            <td> Algoritmos de Programação de Computadores </td>
-            <td> Algoritmos de Programação de Computadores </td>
-            <td> Desenho Industrial Assistido por Computador </td>
-        <tr>
-        <tr>
-            <td>14:00<br>-<br>16:00</td>
-            <td> Inteligência Artificial </td>
-            <td> Métodos de Desenvolvimento de Software </td>
-            <td> Desenho Industrial Assistido por Computador </td>
-            <td> Métodos de Desenvolvimento de Software </td>
-            <td> Inteligência Artificial </td>
-        <tr>
-        <tr>
-            <td>16:00<br>-<br>18:00</td>
-            <td> Tópicos Especiais em Governança de TI </td>
-            <td> Manutenção e Evolução de Software </td>
-            <td> Tópicos Especiais em Governança de TI </td>
-            <td> Manutenção e Evolução de Software </td>
-            <td> IAB </td>
-        <tr>
-        <tr>
-            <td>18:00<br>-<br>20:00</td>
-            <td> Tópicos Especiais em Engenharia de Software <br> 329854-A</td>
-            <td> Tópicos Especiais em Engenharia de Software </td>
-            <td> Tópicos Especiais em Engenharia de Software </td>
-            <td> B </td>
-            <td> Desenho de Software </td>
-        <tr>
-        <tr>
-            <td>20:00<br>-<br>22:00</td>
-            <td> Desenho de Software </td>
-            <td> B </td>
-            <td> Tópicos Especiais em Engenharia de Software </td>
-            <td> B </td>
-            <td> Desenho de Software </td>
-        <tr>
-        <tr>
-            <td>22:00<br>-<br>24:00</td>
-            <td> Desenho de Software </td>
-            <td> B </td>
-            <td> A </td>
-            <td> B </td>
-            <td> Desenho de Software </td>
-        <tr>
-      </table>
-  </main>
+          <table class="table" style="text-align:center">
+            <tr>
+                <td><b>Horário</b></td>
+                <td><b>Segunda-Feira</b></td>
+                <td><b>Terça-Feira</b></td>
+                <td><b>Quarta-Feira</b></td>
+                <td><b>Quinta-Feira</b></td>
+                <td><b>Sexta-Feira</b></td>
+                <td><b>Sábado</b></td>
+            </tr>
+            <tr>
+                <td>06:00<br> - <br>08:00</td>
+                <td>  </td>
+                <td>  </td>
+                <td>  </td>
+                <td>  </td>
+                <td>  </td>
+                <td>  </td>
+            <tr>
+            <tr>
+                <td>08:00<br>-<br>10:00</td>
+                <td> Design 1 <br> A </td>
+                <td> Introdução ao Design <br> A </td>
+                <td> Design 1 <br> A </td>
+                <td> Introdução ao Design <br> A </td>
+                <td> Desenho e Plástica 1 <br> A </td>
+                <td> Ergonomia <br> B </td>
+            <tr>
+            <tr>
+                <td>10:00<br>-<br>12:00</td>
+                <td> História da Arte e da Tecnologia <br> A </td>
+                <td> Programação Visual 1 <br> A </td>
+                <td> História da Arte e da Tecnologia <br> A </td>
+                <td> Programação Visual 1 <br> A </td>
+                <td> Desenho e Plástica 1 <br> A </td>
+                <td>  </td>
+            <tr>
+            <tr>
+                <td>12:00<br>-<br>14:00</td>
+                <td>  </td>
+                <td>  </td>
+                <td>  </td>
+                <td>  </td>
+                <td>  </td>
+                <td>  </td>
+            <tr>
+            <tr>
+                <td>14:00<br>-<br>16:00</td>
+                <td> Física para Desenho Industrial <br> A </td>
+                <td> Fundamentos da Linguagem Aplicados ao Design <br> A </td>
+                <td> Física para Desenho Industrial <br> A </td>
+                <td> Fundamentos da Linguagem Aplicados ao Design <br> A </td>
+                <td> Física para Desenho Industrial <br> A </td>
+                <td> Design 1 <br> A </td>
+            <tr>
+            <tr>
+                <td>16:00<br>-<br>18:00</td>
+                <td> Programação Visual 3 <br> A </td>
+                <td>  </td>
+                <td> Programação Visual 3 <br> A </td>
+                <td> Ensaio em Tecnologia da Arquitetura e Urbanismo <br> A </td>
+                <td> Ensaio em Tecnologia da Arquitetura e Urbanismo <br> A </td>
+                <td>  </td>
+            <tr>
+            <tr>
+                <td>18:00<br>-<br>20:00</td>
+                <td> Geometria Construtiva <br> C </td>
+                <td> Introdução a Arquitetura e Urbanismo <br> C </td>
+                <td> Projeto Arquitetônico 1 <br> C </td>
+                <td> Introdução a Arquitetura e Urbanismo <br> C </td>
+                <td> Geometria Construtiva <br> C </td>
+                <td>  </td>
+            <tr>
+            <tr>
+                <td>20:00<br>-<br>22:00</td>
+                <td> Geometria Construtiva <br> C </td>
+                <td> Introdução a Tecnologia da Arquitetura e Urbanismo <br> C </td>
+                <td>  </td>
+                <td> Introdução a Tecnologia da Arquitetura e Urbanismo <br> C  </td>
+                <td> Geometria Construtiva <br> C </td>
+                <td>  </td>
+            <tr>
+            <tr>
+                <td>22:00<br>-<br>24:00</td>
+                <td>  </td>
+                <td>  </td>
+                <td>  </td>
+                <td>  </td>
+                <td>  </td>
+                <td>  </td>
+            <tr>
+          </table>
+      </main>
 
     </div>
   </body>
